@@ -9,8 +9,6 @@ Input Format :
 1. The first ne contains the string
 2. The second line contains the string
 
-Constraints :
-
 Output Format :
 
 1. Print the tuple in this format (start_index, end_index)

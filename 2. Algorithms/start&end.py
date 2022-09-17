@@ -8,17 +8,17 @@ def substring_indices(pattern, string):
 
 
 # reading input from the file
-inp = open('input.txt', 'r')
-l = [i.strip() for i in inp]
-inp.close()
+in_file = open('input.txt', 'r')
+l = [i.strip() for i in in_file]
+in_file.close()
 a, b = l
 ans = substring_indices(b, a)
 
 # writing output to the file
-oup = open('output.txt', 'w')
+out_file = open('output.txt', 'w')
 if not ans:
-    oup.write('(-1, -1)\n')
+    out_file.write('(-1, -1)\n')
 else:
     for i in ans:
-        oup.write(str(i)+'\n')
-oup.close()
+        out_file.write(str(i)+'\n')
+out_file.close()
